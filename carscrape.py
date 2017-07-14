@@ -32,6 +32,10 @@ import os
  
 data = []
 
+from pyvirtualdisplay import Display
+display = Display(visible=0, size=(800, 800))  
+display.start()
+
 chromedriver = "/var/chromedriver/chromedriver"
 os.environ["webdriver.chrome.driver"] = chromedriver
 driver = webdriver.Chrome(chromedriver)
