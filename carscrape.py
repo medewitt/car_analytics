@@ -32,7 +32,7 @@ import os
  
 data = []
 
-chromedriver = "chromedriver.exe"
+chromedriver = "/var/chromedriver/chromedriver"
 os.environ["webdriver.chrome.driver"] = chromedriver
 driver = webdriver.Chrome(chromedriver)
 driver.get(link)
